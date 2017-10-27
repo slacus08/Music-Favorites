@@ -128,7 +128,7 @@ class ArtistPage extends Component {
 
         twitter: {
           getTweets: () => {
-            axios.get('/api/get-tweets').then((res) => {
+            axios.get('/get-tweets').then((res) => {
               this.setState({
                 twitterResult: res.data
               })
@@ -160,8 +160,6 @@ class ArtistPage extends Component {
              }).catch(err => console.log(err));
           }
        }
-
-
     }
 
    render() {

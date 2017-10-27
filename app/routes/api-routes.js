@@ -13,6 +13,7 @@ const client = new Twitter({
 });
 
 let artistToSearch;
+
 let artistId;
 router.post('/get-tweets', (req, res) => {
   artistToSearch = req.body.searchArtist;
@@ -97,8 +98,6 @@ router.post('/get-tweets', (req, res) => {
   });
 
 module.exports = router;
-
-
 
   // DELETE route for deleting todos. You can access the FavoriteArtists id in req.params.id
   // router.delete("/home/:id", function(req, res) {
